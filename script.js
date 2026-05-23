@@ -478,7 +478,7 @@ const challenges2 = [
   { id: 433, title: "Habit Tracker / Streak Counter", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
 
   // 12. Blockchain & Web3 (434-448)
-  { id: 434, title: "Smart Contract (Solidity) — Simple Storage", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
+  { id: 434, title: "Smart Contract (Solidity) - Simple Storage", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
   { id: 435, title: "Decentralized Exchange (Uniswap-like)", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
   { id: 436, title: "NFT Minter & Marketplace", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
   { id: 437, title: "DAO Governance / Voting System", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
@@ -559,32 +559,30 @@ const allChallenges = challenges.concat(challenges2);
 
 // --- Categories config ---
 const categories = [
-  { key: "Web & Networking", icon: "🌐", color: "#6c5ce7" },
-  { key: "Systems & Infrastructure", icon: "🏗️", color: "#fd79a8" },
-  { key: "Data & Storage", icon: "💾", color: "#00cec9" },
-  { key: "AI & Machine Learning", icon: "🤖", color: "#fdcb6e" },
-  { key: "Languages & Compilers", icon: "🔤", color: "#a29bfe" },
-  { key: "Graphics & Rendering", icon: "🎨", color: "#ff7675" },
-  { key: "Game Development", icon: "🎮", color: "#74b9ff" },
-  { key: "Security & Cryptography", icon: "🔒", color: "#55efc4" },
-  { key: "Algorithms & Mathematics", icon: "🧮", color: "#fab1a0" },
-  { key: "Practical Tools & Apps", icon: "🛠️", color: "#81ecec" },
-  { key: "Mobile & Desktop Development", icon: "📱", color: "#e17055" },
-  { key: "Blockchain & Web3", icon: "🔗", color: "#f8a5c2" },
-  { key: "DevOps & Cloud Infrastructure", icon: "🐳", color: "#63cdda" },
-  { key: "Data Science & Visualization", icon: "📊", color: "#f3a683" },
-  { key: "Audio & Music Technology", icon: "🎵", color: "#778beb" },
-  { key: "Embedded Systems & IoT", icon: "🔌", color: "#e77f67" },
+  { key: "Web & Networking" },
+  { key: "Systems & Infrastructure" },
+  { key: "Data & Storage" },
+  { key: "AI & Machine Learning" },
+  { key: "Languages & Compilers" },
+  { key: "Graphics & Rendering" },
+  { key: "Game Development" },
+  { key: "Security & Cryptography" },
+  { key: "Algorithms & Mathematics" },
+  { key: "Practical Tools & Apps" },
+  { key: "Mobile & Desktop Development" },
+  { key: "Blockchain & Web3" },
+  { key: "DevOps & Cloud Infrastructure" },
+  { key: "Data Science & Visualization" },
+  { key: "Audio & Music Technology" },
+  { key: "Embedded Systems & IoT" },
 ];
-
-const diffEmoji = { Easy: "🟢", Medium: "🔵", Hard: "🟠", Expert: "🔴" };
 
 // --- DOM refs ---
 const randomResult = document.getElementById("random-result");
 const randomBtn = document.getElementById("random-btn");
 const randomDiff = document.getElementById("random-difficulty");
 const randomCat = document.getElementById("random-category");
-const categoryGrid = document.getElementById("category-grid");
+
 const challengesTable = document.getElementById("challenges-table");
 const searchInput = document.getElementById("search-input");
 const filterCat = document.getElementById("filter-category");
@@ -599,7 +597,7 @@ catSelects.forEach((sel) => {
   categories.forEach((c) => {
     const opt = document.createElement("option");
     opt.value = c.key;
-    opt.textContent = `${c.icon} ${c.key}`;
+    opt.textContent = c.key;
     sel.appendChild(opt);
   });
 });
@@ -649,33 +647,11 @@ function renderChallengeDisplay(c, preview) {
     <div class="rd-title">${c.title}</div>
     <div class="rd-meta">
       <span class="rd-cat">${c.cat}</span>
-      <span class="rd-diff diff-${c.diff}">${diffEmoji[c.diff]} ${c.diff}</span>
+      <span class="rd-diff diff-${c.diff}">${c.diff}</span>
       <span class="rd-cat">${c.src}</span>
     </div>
   </div>`;
 }
-
-// --- Category cards ---
-categories.forEach((cat) => {
-  const count = allChallenges.filter((c) => c.cat === cat.key).length;
-  const max = Math.max(...categories.map((c) => allChallenges.filter((x) => x.cat === c.key).length));
-  const pct = (count / max) * 100;
-
-  const card = document.createElement("div");
-  card.className = "cat-card";
-  card.innerHTML = `
-    <div class="cat-icon">${cat.icon}</div>
-    <div class="cat-name">${cat.key}</div>
-    <div class="cat-count">${count} challenges</div>
-    <div class="cat-bar"><div class="cat-bar-fill" style="width:${pct}%"></div></div>
-  `;
-  card.addEventListener("click", () => {
-    filterCat.value = cat.key;
-    renderTable();
-    document.getElementById("browse").scrollIntoView({ behavior: "smooth" });
-  });
-  categoryGrid.appendChild(card);
-});
 
 // --- Browse table ---
 function renderTable() {
@@ -697,13 +673,12 @@ function renderTable() {
   challengesTable.innerHTML = "";
   filtered.forEach((c) => {
     const row = document.createElement("div");
-    row.className = "challenge-row fade-in";
-    row.style.animationDelay = `${(c.id % 30) * 5}ms`;
+    row.className = "challenge-row";
     row.innerHTML = `
       <span class="cr-id">#${c.id}</span>
       <span class="cr-title">${c.title}</span>
       <span class="cr-cat">${c.cat}</span>
-      <span class="rd-diff diff-${c.diff}">${diffEmoji[c.diff]} ${c.diff}</span>
+      <span class="rd-diff diff-${c.diff}">${c.diff}</span>
       <span class="cr-source source-${c.src}">${c.src}</span>
     `;
     challengesTable.appendChild(row);
@@ -717,6 +692,3 @@ filterSrc.addEventListener("change", renderTable);
 
 // Initial render
 renderTable();
-
-// Pick a random challenge on page load after a moment
-setTimeout(() => pickRandom(), 600);

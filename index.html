@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pro/g/ramming Challenges v5.0</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
@@ -14,26 +13,20 @@
       <span class="nav-logo">/// CHALLENGES v5</span>
       <div class="nav-links">
         <a href="#random">Random</a>
-        <a href="#categories">Categories</a>
         <a href="#browse">Browse</a>
-        <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank">BYOX</a>
       </div>
     </div>
   </nav>
 
   <header class="hero">
-    <div class="hero-bg"></div>
     <div class="hero-content">
-      <span class="hero-badge">500 Challenges · 16 Domains · 2026 Edition</span>
       <h1>Pro/g/ramming<br>Challenges <span class="highlight">v5.0</span></h1>
       <p class="hero-sub">Master programming by building things from scratch.</p>
-      <blockquote>"What I cannot create, I do not understand."<cite>— Richard Feynman</cite></blockquote>
+      <blockquote>"What I cannot create, I do not understand."<cite>- Richard Feynman</cite></blockquote>
       <div class="hero-stats">
         <div class="stat"><span class="stat-num">500</span><span class="stat-label">Challenges</span></div>
         <div class="stat"><span class="stat-num">16</span><span class="stat-label">Categories</span></div>
         <div class="stat"><span class="stat-num">4</span><span class="stat-label">Difficulties</span></div>
-        <div class="stat"><span class="stat-num">145</span><span class="stat-label">From v4</span></div>
-        <div class="stat"><span class="stat-num">355</span><span class="stat-label">New</span></div>
       </div>
     </div>
   </header>
@@ -41,7 +34,7 @@
   <main>
     <section id="random" class="section">
       <div class="section-inner">
-        <h2 class="section-title">🎲 Random Challenge</h2>
+        <h2 class="section-title">Random Challenge</h2>
         <p class="section-desc">Can't decide? Let fate choose your next project.</p>
         <div class="random-container">
           <div id="random-result" class="random-result">
@@ -54,10 +47,10 @@
                 <span>Difficulty</span>
                 <select id="random-difficulty">
                   <option value="any">Any</option>
-                  <option value="Easy">🟢 Easy</option>
-                  <option value="Medium">🔵 Medium</option>
-                  <option value="Hard">🟠 Hard</option>
-                  <option value="Expert">🔴 Expert</option>
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Hard">Hard</option>
+                  <option value="Expert">Expert</option>
                 </select>
               </label>
               <label class="filter-group">
@@ -72,17 +65,9 @@
       </div>
     </section>
 
-    <section id="categories" class="section section-dark">
-      <div class="section-inner">
-        <h2 class="section-title">📂 Categories</h2>
-        <p class="section-desc">Ten domains spanning the full spectrum of software engineering.</p>
-        <div id="category-grid" class="category-grid"></div>
-      </div>
-    </section>
-
     <section id="browse" class="section">
       <div class="section-inner">
-        <h2 class="section-title">🔍 Browse All Challenges</h2>
+        <h2 class="section-title">Browse All Challenges</h2>
         <p class="section-desc">Filter by category, difficulty, or search by keyword.</p>
         <div class="browse-controls">
           <input type="text" id="search-input" class="search-input" placeholder="Search challenges...">
@@ -92,10 +77,10 @@
             </select>
             <select id="filter-difficulty">
               <option value="all">All Difficulties</option>
-              <option value="Easy">🟢 Easy</option>
-              <option value="Medium">🔵 Medium</option>
-              <option value="Hard">🟠 Hard</option>
-              <option value="Expert">🔴 Expert</option>
+              <option value="Easy">Easy</option>
+              <option value="Medium">Medium</option>
+              <option value="Hard">Hard</option>
+              <option value="Expert">Expert</option>
             </select>
             <select id="filter-source">
               <option value="all">All Sources</option>
@@ -114,8 +99,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <p>Pro/g/ramming Challenges v5.0 — A superset of the classic 4chan /g/ challenge list.</p>
-      <p>Inspired by <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank">build-your-own-x</a>.</p>
+      <p>Pro/g/ramming Challenges v5.0 - A superset of the classic 4chan /g/ challenge list.</p>
       <p class="footer-license">Public domain. Build cool stuff.</p>
     </div>
   </footer>
