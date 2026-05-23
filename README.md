@@ -15,7 +15,7 @@ Browse, search, and filter them all at **[programming-challenges-v5.netlify.app]
 
 ## How to Use
 
-1. Visit **[programming-challenges-v5.netlify.app](https://programming-challenges-v5.netlify.app/)** (or open `index.html` locally)
+1. Visit **[programming-challenges-v5.netlify.app](https://programming-challenges-v5.netlify.app/)**
 2. Pick a challenge that interests you (or use the random picker)
 3. Build it from scratch in the language of your choice
 4. Push your code to a public repository
