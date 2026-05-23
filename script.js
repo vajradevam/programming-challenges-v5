@@ -270,6 +270,293 @@ const challenges = [
   { id: 250, title: "TI-86 Graphing Calculator Emulator", cat: "Practical Tools & Apps", diff: "Hard", src: "v4" },
 ];
 
+// --- Volume 2: Challenges 251-500 ---
+const challenges2 = [
+  // 1. Web & Networking (251-266)
+  { id: 251, title: "HTTP/3 (QUIC) Client", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 252, title: "Server-Sent Events (SSE) Push Server", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 253, title: "WebRTC Data Channel File Sharing", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 254, title: "REST API Client Library", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 255, title: "OpenAPI / Swagger Spec Parser", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 256, title: "Webhook Receiver & Dispatcher Service", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 257, title: "Rate Limiter (Token Bucket / Leaky Bucket)", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 258, title: "Circuit Breaker Pattern Library", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 259, title: "Service Discovery Registry (Consul-like)", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 260, title: "Distributed Tracing System (Jaeger-like)", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 261, title: "Web Push Notification Service", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 262, title: "Long-Polling Chat Server", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 263, title: "CQRS / Event Sourcing Framework", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 264, title: "Health Check & Status Dashboard", cat: "Web & Networking", diff: "Medium", src: "New" },
+  { id: 265, title: "HTTP Proxy with Caching (Squid-like)", cat: "Web & Networking", diff: "Hard", src: "New" },
+  { id: 266, title: "IPFS-like Distributed File System Node", cat: "Web & Networking", diff: "Expert", src: "New" },
+
+  // 2. Systems & Infrastructure (267-282)
+  { id: 267, title: "eBPF Program (packet filter / tracing)", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 268, title: "Unikernel (single-address-space OS image)", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 269, title: "Simple Type-2 Hypervisor", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 270, title: "Network Filesystem (NFS-like)", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 271, title: "RAM Disk Driver", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 272, title: "/proc Filesystem Implementation", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 273, title: "Kernel Module for GPIO Control", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 274, title: "KVM-based Lightweight Emulator", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 275, title: "NUMA-Aware Memory Allocator", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 276, title: "ACPI Driver (power management basics)", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 277, title: "Interrupt Controller (PIC/APIC simulation)", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 278, title: "PCI Device Driver", cat: "Systems & Infrastructure", diff: "Expert", src: "New" },
+  { id: 279, title: "Scheduler Visualization Tool", cat: "Systems & Infrastructure", diff: "Medium", src: "New" },
+  { id: 280, title: "Core Dump Analyzer", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 281, title: "Performance Counter Monitor (perf-like)", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+  { id: 282, title: "User-Space Network Stack (netmap-like)", cat: "Systems & Infrastructure", diff: "Hard", src: "New" },
+
+  // 3. Data & Storage (283-298)
+  { id: 283, title: "Triplestore (RDF/SPARQL Database)", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 284, title: "Document Store (MongoDB-like)", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 285, title: "Wide-Column Store (Cassandra-like)", cat: "Data & Storage", diff: "Expert", src: "New" },
+  { id: 286, title: "In-Memory Data Grid (Hazelcast-like)", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 287, title: "Streaming Database (Materialize-like)", cat: "Data & Storage", diff: "Expert", src: "New" },
+  { id: 288, title: "Change Data Capture (CDC) System", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 289, title: "Database Migration Tool", cat: "Data & Storage", diff: "Medium", src: "New" },
+  { id: 290, title: "ORM (Object-Relational Mapper) from Scratch", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 291, title: "Query Optimizer / Query Planner", cat: "Data & Storage", diff: "Expert", src: "New" },
+  { id: 292, title: "Multi-Version Concurrency Control (MVCC)", cat: "Data & Storage", diff: "Expert", src: "New" },
+  { id: 293, title: "Write-Ahead Log (WAL) Implementation", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 294, title: "Distributed Transaction Coordinator (2PC)", cat: "Data & Storage", diff: "Expert", src: "New" },
+  { id: 295, title: "Sharded Counter Service", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 296, title: "HyperLogLog (cardinality estimation)", cat: "Data & Storage", diff: "Medium", src: "New" },
+  { id: 297, title: "Geospatial Index (R-Tree / Quad-Tree)", cat: "Data & Storage", diff: "Hard", src: "New" },
+  { id: 298, title: "Count-Min Sketch (frequency estimation)", cat: "Data & Storage", diff: "Medium", src: "New" },
+
+  // 4. AI & Machine Learning (299-314)
+  { id: 299, title: "Genetic Algorithm Framework", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 300, title: "Particle Swarm Optimization", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 301, title: "Bayesian Network / Belief Network", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 302, title: "Hidden Markov Model (HMM) from Scratch", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 303, title: "Word2Vec / GloVe Embeddings from Scratch", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 304, title: "Named Entity Recognition (NER) System", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 305, title: "Extractive Text Summarizer", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 306, title: "Question Answering System (BERT-style)", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 307, title: "Document Clustering (HDBSCAN)", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 308, title: "Isolation Forest (Anomaly Detection)", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 309, title: "Gaussian Mixture Model (GMM)", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 310, title: "Principal Component Analysis (PCA) from Scratch", cat: "AI & Machine Learning", diff: "Medium", src: "New" },
+  { id: 311, title: "t-SNE Dimensionality Reduction", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 312, title: "Gradient Boosting Machine (XGBoost-like)", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 313, title: "Latent Dirichlet Allocation (Topic Modeling)", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+  { id: 314, title: "Causal Inference / A/B Testing Framework", cat: "AI & Machine Learning", diff: "Hard", src: "New" },
+
+  // 5. Languages & Compilers (315-330)
+  { id: 315, title: "Forth Language Interpreter", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 316, title: "Prolog Inference Engine", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 317, title: "Smalltalk-like VM / Object System", cat: "Languages & Compilers", diff: "Expert", src: "New" },
+  { id: 318, title: "Brainfuck JIT Compiler", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 319, title: "Python Bytecode Disassembler", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 320, title: "SQL Parser (full grammar)", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 321, title: "YAML Parser from Scratch", cat: "Languages & Compilers", diff: "Medium", src: "New" },
+  { id: 322, title: "TOML Parser from Scratch", cat: "Languages & Compilers", diff: "Easy", src: "New" },
+  { id: 323, title: "INI / Config File Parser", cat: "Languages & Compilers", diff: "Easy", src: "New" },
+  { id: 324, title: "C Preprocessor (macros, includes, pragma)", cat: "Languages & Compilers", diff: "Expert", src: "New" },
+  { id: 325, title: "Source Map Generator (JS/CSS)", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 326, title: "Simple Decompiler (binary to pseudocode)", cat: "Languages & Compilers", diff: "Expert", src: "New" },
+  { id: 327, title: "Debug Symbol Reader (DWARF/PDB)", cat: "Languages & Compilers", diff: "Expert", src: "New" },
+  { id: 328, title: "S-Expression Parser + Pretty Printer", cat: "Languages & Compilers", diff: "Medium", src: "New" },
+  { id: 329, title: "PEG Parser Generator", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+  { id: 330, title: "Language Server Protocol (LSP) Implementation", cat: "Languages & Compilers", diff: "Hard", src: "New" },
+
+  // 6. Graphics & Rendering (331-346)
+  { id: 331, title: "GLTF/GLB 3D Model Loader", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 332, title: "Bezier Curve Editor", cat: "Graphics & Rendering", diff: "Medium", src: "New" },
+  { id: 333, title: "Subdivision Surface Modeler (Catmull-Clark)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 334, title: "Marching Cubes (isosurface extraction)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 335, title: "Terrain Generation (Perlin Noise + Erosion)", cat: "Graphics & Rendering", diff: "Medium", src: "New" },
+  { id: 336, title: "Fluid Simulation (SPH / PIC / FLIP)", cat: "Graphics & Rendering", diff: "Expert", src: "New" },
+  { id: 337, title: "Cloth Simulation (Spring-Mass System)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 338, title: "Volumetric Cloud / Fog Rendering", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 339, title: "Global Illumination (Path Tracing)", cat: "Graphics & Rendering", diff: "Expert", src: "New" },
+  { id: 340, title: "Shadow Mapping (Cascaded / PCF)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 341, title: "Screen-Space Reflections", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 342, title: "Post-Processing Pipeline (Bloom, DOF, Motion Blur)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 343, title: "GPU Compute Shader (particles / physics)", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 344, title: "Signed Distance Field (SDF) Renderer", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+  { id: 345, title: "Color Quantization / Palette Extraction", cat: "Graphics & Rendering", diff: "Medium", src: "New" },
+  { id: 346, title: "Procedural City / Building Generator", cat: "Graphics & Rendering", diff: "Hard", src: "New" },
+
+  // 7. Game Development (347-362)
+  { id: 347, title: "Visual Novel Engine (Ren'Py-like)", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 348, title: "Point-and-Click Adventure Engine", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 349, title: "Interactive Fiction / Text Parser (Zork-like)", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 350, title: "Sokoban / Puzzle Game Engine", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 351, title: "Rhythm Game (Guitar Hero / osu!-like)", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 352, title: "Top-Down Racing Game", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 353, title: "Fighting Game Engine (Street Fighter-like)", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 354, title: "Tower Defense Game", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 355, title: "City Builder / Tycoon Game", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 356, title: "Idle / Incremental Clicker Game", cat: "Game Development", diff: "Easy", src: "New" },
+  { id: 357, title: "Battle Royale (simplified, AI opponents)", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 358, title: "Online Multiplayer Lobby + Matchmaking", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 359, title: "Collectible Card Game (Hearthstone-like)", cat: "Game Development", diff: "Hard", src: "New" },
+  { id: 360, title: "Hidden Object Game", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 361, title: "Endless Runner (Temple Run-like)", cat: "Game Development", diff: "Medium", src: "New" },
+  { id: 362, title: "Pinball Simulation", cat: "Game Development", diff: "Medium", src: "New" },
+
+  // 8. Security & Cryptography (363-378)
+  { id: 363, title: "Differential Privacy Library", cat: "Security & Cryptography", diff: "Expert", src: "New" },
+  { id: 364, title: "Homomorphic Encryption (simple addition)", cat: "Security & Cryptography", diff: "Expert", src: "New" },
+  { id: 365, title: "Shamir's Secret Sharing Scheme", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 366, title: "ECDSA Digital Signatures from Scratch", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 367, title: "Post-Quantum Cryptography Prototype (lattice)", cat: "Security & Cryptography", diff: "Expert", src: "New" },
+  { id: 368, title: "Side-Channel Attack Demo (timing/power)", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 369, title: "Network Protocol Fuzzer (AFL-like)", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 370, title: "Seccomp-Based Application Sandbox", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 371, title: "Hardened Container Runtime (gVisor-like)", cat: "Security & Cryptography", diff: "Expert", src: "New" },
+  { id: 372, title: "Credential Vault / Secrets Hub", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 373, title: "Secrets Rotation Service", cat: "Security & Cryptography", diff: "Medium", src: "New" },
+  { id: 374, title: "Code Signing & Verification System", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 375, title: "GPG-like Encryption Tool", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 376, title: "Password Strength Estimator (zxcvbn-like)", cat: "Security & Cryptography", diff: "Medium", src: "New" },
+  { id: 377, title: "Certificate Transparency Log Monitor", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+  { id: 378, title: "Web Application Firewall (WAF) Rules Engine", cat: "Security & Cryptography", diff: "Hard", src: "New" },
+
+  // 9. Algorithms & Mathematics (379-395)
+  { id: 379, title: "Hungarian Algorithm (assignment problem)", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 380, title: "Floyd-Warshall (all-pairs shortest path)", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 381, title: "Edmonds-Karp / Dinic Max Flow", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 382, title: "Knuth-Morris-Pratt String Search", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 383, title: "Burrows-Wheeler Transform (BWT)", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 384, title: "Huffman Coding Visualizer", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 385, title: "L-System / Fractal Grammar Generator", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 386, title: "Voronoi Diagram / Fortune's Algorithm", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 387, title: "Delaunay Triangulation", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 388, title: "Barnes-Hut N-Body Approximation", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 389, title: "Strassen Matrix Multiplication", cat: "Algorithms & Mathematics", diff: "Hard", src: "New" },
+  { id: 390, title: "Karatsuba Multiplication", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 391, title: "Miller-Rabin Primality Test", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 392, title: "Levenshtein / Damerau-Levenshtein Distance", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 393, title: "Longest Common Subsequence (LCS)", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+  { id: 394, title: "Maximum Subarray (Kadane's Algorithm)", cat: "Algorithms & Mathematics", diff: "Easy", src: "New" },
+  { id: 395, title: "Reservoir Sampling", cat: "Algorithms & Mathematics", diff: "Medium", src: "New" },
+
+  // 10. Practical Tools & Apps (396-413)
+  { id: 396, title: "Clipboard Manager (history, categories)", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 397, title: "Screen Recorder (video capture)", cat: "Practical Tools & Apps", diff: "Hard", src: "New" },
+  { id: 398, title: "Screenshot Annotation Tool", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 399, title: "Window Switcher (Alt-Tab replacement)", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 400, title: "Instant File Search (Everything-like)", cat: "Practical Tools & Apps", diff: "Hard", src: "New" },
+  { id: 401, title: "Disk Usage Analyzer (TreeMap view)", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 402, title: "Color Picker / Eyedropper (screen)", cat: "Practical Tools & Apps", diff: "Easy", src: "New" },
+  { id: 403, title: "Font Preview & Manager", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 404, title: "Batch File Renamer", cat: "Practical Tools & Apps", diff: "Easy", src: "New" },
+  { id: 405, title: "Duplicate File Finder", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 406, title: "Quick Launcher (Alfred / Spotlight-like)", cat: "Practical Tools & Apps", diff: "Hard", src: "New" },
+  { id: 407, title: "Pomodoro Timer + Task Tracker", cat: "Practical Tools & Apps", diff: "Easy", src: "New" },
+  { id: 408, title: "Habit Tracker with Streak Counting", cat: "Practical Tools & Apps", diff: "Easy", src: "New" },
+  { id: 409, title: "Flashcard App (Anki-like, spaced repetition)", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 410, title: "Recipe Manager / Meal Planner", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+  { id: 411, title: "Document Scanner (camera-based)", cat: "Practical Tools & Apps", diff: "Hard", src: "New" },
+  { id: 412, title: "E-Book Reader (EPUB/MOBI)", cat: "Practical Tools & Apps", diff: "Hard", src: "New" },
+  { id: 413, title: "Budget Tracker / Personal Finance", cat: "Practical Tools & Apps", diff: "Medium", src: "New" },
+
+  // 11. Mobile & Desktop Development (414-433)
+  { id: 414, title: "Cross-Platform Calculator App", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
+  { id: 415, title: "Weather App with Live Animations", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 416, title: "Expense / Budget Tracker", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 417, title: "Note-Taking App (sync, markdown)", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 418, title: "RSS / Feed Reader", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 419, title: "Podcast Player App", cat: "Mobile & Desktop Development", diff: "Hard", src: "New" },
+  { id: 420, title: "Workout / Exercise Tracker", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 421, title: "Meditation / Focus Timer", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
+  { id: 422, title: "QR Code Scanner & Generator", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 423, title: "Music Player (playlists, search)", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 424, title: "Alarm Clock with Custom Ringtones", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 425, title: "Step Counter / Pedometer", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 426, title: "Drawing / Sketchpad App", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 427, title: "Unit Converter (comprehensive)", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
+  { id: 428, title: "Language Learning Flashcards", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 429, title: "Shopping List / Grocery App", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
+  { id: 430, title: "Calendar / Event Scheduler", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 431, title: "Compass / Level Tool", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 432, title: "Barcode Scanner (product lookup)", cat: "Mobile & Desktop Development", diff: "Medium", src: "New" },
+  { id: 433, title: "Habit Tracker / Streak Counter", cat: "Mobile & Desktop Development", diff: "Easy", src: "New" },
+
+  // 12. Blockchain & Web3 (434-448)
+  { id: 434, title: "Smart Contract (Solidity) — Simple Storage", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
+  { id: 435, title: "Decentralized Exchange (Uniswap-like)", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
+  { id: 436, title: "NFT Minter & Marketplace", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 437, title: "DAO Governance / Voting System", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 438, title: "Merkle Tree (proof gen + verification)", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
+  { id: 439, title: "Zero-Knowledge Proof (simple zk-SNARK circuit)", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
+  { id: 440, title: "SPV Light Client (Bitcoin/Ethereum)", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
+  { id: 441, title: "HD Wallet (BIP32/39/44 mnemonic)", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 442, title: "ERC-20 Token from Scratch", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
+  { id: 443, title: "Staking / Yield Farming Simulator", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 444, title: "Block Explorer Web App", cat: "Blockchain & Web3", diff: "Medium", src: "New" },
+  { id: 445, title: "Multi-Signature Wallet", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 446, title: "Oracle Price Feed Service", cat: "Blockchain & Web3", diff: "Hard", src: "New" },
+  { id: 447, title: "Layer 2 Rollup (simple state channel)", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
+  { id: 448, title: "Cross-Chain Bridge Relay", cat: "Blockchain & Web3", diff: "Expert", src: "New" },
+
+  // 13. DevOps & Cloud Infrastructure (449-463)
+  { id: 449, title: "CI/CD Pipeline Engine (GitHub Actions-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 450, title: "Terraform Provider for Custom Service", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 451, title: "Configuration Management (Ansible-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 452, title: "Monitoring Dashboard (Grafana-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 453, title: "Log Aggregator (Loki / ELK-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 454, title: "Secret Management (Vault-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 455, title: "Feature Flag / Toggle Service", cat: "DevOps & Cloud Infrastructure", diff: "Medium", src: "New" },
+  { id: 456, title: "Status Page / Uptime Monitor", cat: "DevOps & Cloud Infrastructure", diff: "Medium", src: "New" },
+  { id: 457, title: "On-Call Schedule Manager (PagerDuty-like)", cat: "DevOps & Cloud Infrastructure", diff: "Medium", src: "New" },
+  { id: 458, title: "Blue-Green Deployment Tool", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 459, title: "Canary Deployment Controller", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 460, title: "Artifact Repository (Docker Registry-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 461, title: "Service Mesh Proxy Sidecar (Envoy-like)", cat: "DevOps & Cloud Infrastructure", diff: "Expert", src: "New" },
+  { id: 462, title: "Chaos Engineering Tool (Chaos Monkey)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+  { id: 463, title: "Auto-Scaler (K8s HPA-like)", cat: "DevOps & Cloud Infrastructure", diff: "Hard", src: "New" },
+
+  // 14. Data Science & Visualization (464-478)
+  { id: 464, title: "Interactive Dashboard (Tableau-like)", cat: "Data Science & Visualization", diff: "Hard", src: "New" },
+  { id: 465, title: "Choropleth Map Generator", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 466, title: "Network Graph Visualizer", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 467, title: "Sankey Diagram / Flow Chart Generator", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 468, title: "Violin / Box Plot Charting Library", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 469, title: "Heat Map / Correlation Matrix", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 470, title: "Parallel Coordinates Plot", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 471, title: "3D Surface / Contour Plot Renderer", cat: "Data Science & Visualization", diff: "Hard", src: "New" },
+  { id: 472, title: "Animated Timeline / Gapminder Chart", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 473, title: "Word Cloud Generator", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 474, title: "Data Cleaning / Wrangling Pipeline", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 475, title: "Web Scraper to Structured Dataset", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 476, title: "Time Series Anomaly Visualizer", cat: "Data Science & Visualization", diff: "Hard", src: "New" },
+  { id: 477, title: "Alluvial / River Plot Generator", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+  { id: 478, title: "Radar / Spider Chart Generator", cat: "Data Science & Visualization", diff: "Medium", src: "New" },
+
+  // 15. Audio & Music Technology (479-490)
+  { id: 479, title: "DAW (Digital Audio Workstation) Lite", cat: "Audio & Music Technology", diff: "Expert", src: "New" },
+  { id: 480, title: "Audio Editor (Audacity-like waveform editing)", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 481, title: "Drum Machine / Step Sequencer", cat: "Audio & Music Technology", diff: "Medium", src: "New" },
+  { id: 482, title: "Granular Synthesizer", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 483, title: "Audio Looper / Phrase Sampler", cat: "Audio & Music Technology", diff: "Medium", src: "New" },
+  { id: 484, title: "Auto-Tune / Pitch Correction", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 485, title: "Audio Effect Chain (reverb, delay, chorus)", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 486, title: "Metronome / Instrument Tuner", cat: "Audio & Music Technology", diff: "Medium", src: "New" },
+  { id: 487, title: "Sheet Music Renderer (MIDI to notation)", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 488, title: "Chord Progression Analyzer", cat: "Audio & Music Technology", diff: "Medium", src: "New" },
+  { id: 489, title: "Audio Stream Mixer (multi-track)", cat: "Audio & Music Technology", diff: "Hard", src: "New" },
+  { id: 490, title: "Noise Gate / Compressor / Limiter", cat: "Audio & Music Technology", diff: "Medium", src: "New" },
+
+  // 16. Embedded Systems & IoT (491-500)
+  { id: 491, title: "LED Matrix Display Driver (text + animations)", cat: "Embedded Systems & IoT", diff: "Medium", src: "New" },
+  { id: 492, title: "Temperature / Humidity Data Logger", cat: "Embedded Systems & IoT", diff: "Medium", src: "New" },
+  { id: 493, title: "Smart Home Hub Controller", cat: "Embedded Systems & IoT", diff: "Hard", src: "New" },
+  { id: 494, title: "ESP32 Web Server with REST API", cat: "Embedded Systems & IoT", diff: "Medium", src: "New" },
+  { id: 495, title: "Handheld Game Console (Arduino)", cat: "Embedded Systems & IoT", diff: "Hard", src: "New" },
+  { id: 496, title: "Drone Flight Controller (simulation)", cat: "Embedded Systems & IoT", diff: "Expert", src: "New" },
+  { id: 497, title: "Motion-Activated Security Camera", cat: "Embedded Systems & IoT", diff: "Hard", src: "New" },
+  { id: 498, title: "RFID / NFC Door Lock System", cat: "Embedded Systems & IoT", diff: "Hard", src: "New" },
+  { id: 499, title: "Weather Station (sensors + live dashboard)", cat: "Embedded Systems & IoT", diff: "Medium", src: "New" },
+  { id: 500, title: "Bluetooth LE Beacon Scanner", cat: "Embedded Systems & IoT", diff: "Hard", src: "New" },
+];
+
+const allChallenges = challenges.concat(challenges2);
+
 // --- Categories config ---
 const categories = [
   { key: "Web & Networking", icon: "🌐", color: "#6c5ce7" },
@@ -282,6 +569,12 @@ const categories = [
   { key: "Security & Cryptography", icon: "🔒", color: "#55efc4" },
   { key: "Algorithms & Mathematics", icon: "🧮", color: "#fab1a0" },
   { key: "Practical Tools & Apps", icon: "🛠️", color: "#81ecec" },
+  { key: "Mobile & Desktop Development", icon: "📱", color: "#e17055" },
+  { key: "Blockchain & Web3", icon: "🔗", color: "#f8a5c2" },
+  { key: "DevOps & Cloud Infrastructure", icon: "🐳", color: "#63cdda" },
+  { key: "Data Science & Visualization", icon: "📊", color: "#f3a683" },
+  { key: "Audio & Music Technology", icon: "🎵", color: "#778beb" },
+  { key: "Embedded Systems & IoT", icon: "🔌", color: "#e77f67" },
 ];
 
 const diffEmoji = { Easy: "🟢", Medium: "🔵", Hard: "🟠", Expert: "🔴" };
@@ -311,7 +604,7 @@ catSelects.forEach((sel) => {
   });
 });
 
-totalCount.textContent = challenges.length;
+totalCount.textContent = allChallenges.length;
 
 // --- Random picker ---
 randomBtn.addEventListener("click", pickRandom);
@@ -320,7 +613,7 @@ function pickRandom() {
   const catFilter = randomCat.value;
   const diffFilter = randomDiff.value;
 
-  let pool = challenges;
+  let pool = allChallenges;
   if (catFilter !== "any") pool = pool.filter((c) => c.cat === catFilter);
   if (diffFilter !== "any") pool = pool.filter((c) => c.diff === diffFilter);
 
@@ -364,8 +657,8 @@ function renderChallengeDisplay(c, preview) {
 
 // --- Category cards ---
 categories.forEach((cat) => {
-  const count = challenges.filter((c) => c.cat === cat.key).length;
-  const max = Math.max(...categories.map((c) => challenges.filter((x) => x.cat === c.key).length));
+  const count = allChallenges.filter((c) => c.cat === cat.key).length;
+  const max = Math.max(...categories.map((c) => allChallenges.filter((x) => x.cat === c.key).length));
   const pct = (count / max) * 100;
 
   const card = document.createElement("div");
@@ -391,7 +684,7 @@ function renderTable() {
   const src = filterSrc.value;
   const query = searchInput.value.toLowerCase().trim();
 
-  const filtered = challenges.filter((c) => {
+  const filtered = allChallenges.filter((c) => {
     if (cat !== "all" && c.cat !== cat) return false;
     if (diff !== "all" && c.diff !== diff) return false;
     if (src !== "all" && c.src !== src) return false;

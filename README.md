@@ -2,7 +2,7 @@
 
 > *"What I cannot create, I do not understand." — Richard Feynman*
 
-A curated list of **250 programming challenges** spanning 10 domains, from beginner to expert. This is the fifth edition — a superset of the classic v4.0 with 105 new challenges drawn from modern software engineering, systems programming, AI/ML, and the legendary [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) repository.
+A curated list of **500 programming challenges** spanning 16 domains, from beginner to expert. This is the fifth edition — a superset of the classic v4.0 with 355 new challenges drawn from modern software engineering, systems programming, AI/ML, and the legendary [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) repository.
 
 ## How to Use
 
@@ -341,9 +341,349 @@ Every challenge designated `[v4]` is carried over from Programming Challenges v4
 
 ---
 
+## Volume 2: Expanded Collection (Challenges #251–500)
+
+New challenges extending every domain, plus six entirely new categories.
+
+### Existing Categories — Expanded
+
+#### 1. 🌐 Web & Networking (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 251 | HTTP/3 (QUIC) Client | 🟠 | New |
+| 252 | Server-Sent Events (SSE) Push Server | 🔵 | New |
+| 253 | WebRTC Data Channel File Sharing | 🟠 | New |
+| 254 | REST API Client Library | 🔵 | New |
+| 255 | OpenAPI / Swagger Spec Parser | 🔵 | New |
+| 256 | Webhook Receiver & Dispatcher Service | 🔵 | New |
+| 257 | Rate Limiter (Token Bucket / Leaky Bucket) | 🔵 | New |
+| 258 | Circuit Breaker Pattern Library | 🔵 | New |
+| 259 | Service Discovery Registry (Consul-like) | 🟠 | New |
+| 260 | Distributed Tracing System (Jaeger-like) | 🟠 | New |
+| 261 | Web Push Notification Service | 🔵 | New |
+| 262 | Long-Polling Chat Server | 🔵 | New |
+| 263 | CQRS / Event Sourcing Framework | 🟠 | New |
+| 264 | Health Check & Status Dashboard | 🔵 | New |
+| 265 | HTTP Proxy with Caching (Squid-like) | 🟠 | New |
+| 266 | IPFS-like Distributed File System Node | 🔴 | New |
+
+#### 2. 🏗️ Systems & Infrastructure (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 267 | eBPF Program (packet filter / tracing) | 🔴 | New |
+| 268 | Unikernel (single-address-space OS image) | 🔴 | New |
+| 269 | Simple Type-2 Hypervisor | 🔴 | New |
+| 270 | Network Filesystem (NFS-like) | 🟠 | New |
+| 271 | RAM Disk Driver | 🟠 | New |
+| 272 | /proc Filesystem Implementation | 🟠 | New |
+| 273 | Kernel Module for GPIO Control | 🟠 | New |
+| 274 | KVM-based Lightweight Emulator | 🔴 | New |
+| 275 | NUMA-Aware Memory Allocator | 🔴 | New |
+| 276 | ACPI Driver (power management basics) | 🔴 | New |
+| 277 | Interrupt Controller (PIC/APIC simulation) | 🔴 | New |
+| 278 | PCI Device Driver | 🔴 | New |
+| 279 | Scheduler Visualization Tool | 🔵 | New |
+| 280 | Core Dump Analyzer | 🟠 | New |
+| 281 | Performance Counter Monitor (perf-like) | 🟠 | New |
+| 282 | User-Space Network Stack (netmap-like) | 🟠 | New |
+
+#### 3. 💾 Data & Storage (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 283 | Triplestore (RDF/SPARQL Database) | 🟠 | New |
+| 284 | Document Store (MongoDB-like) | 🟠 | New |
+| 285 | Wide-Column Store (Cassandra-like) | 🔴 | New |
+| 286 | In-Memory Data Grid (Hazelcast-like) | 🟠 | New |
+| 287 | Streaming Database (Materialize-like) | 🔴 | New |
+| 288 | Change Data Capture (CDC) System | 🟠 | New |
+| 289 | Database Migration Tool | 🔵 | New |
+| 290 | ORM (Object-Relational Mapper) from Scratch | 🟠 | New |
+| 291 | Query Optimizer / Query Planner | 🔴 | New |
+| 292 | Multi-Version Concurrency Control (MVCC) | 🔴 | New |
+| 293 | Write-Ahead Log (WAL) Implementation | 🟠 | New |
+| 294 | Distributed Transaction Coordinator (2PC) | 🔴 | New |
+| 295 | Sharded Counter Service | 🟠 | New |
+| 296 | HyperLogLog (cardinality estimation) | 🔵 | New |
+| 297 | Geospatial Index (R-Tree / Quad-Tree) | 🟠 | New |
+| 298 | Count-Min Sketch (frequency estimation) | 🔵 | New |
+
+#### 4. 🤖 AI & Machine Learning (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 299 | Genetic Algorithm Framework | 🔵 | New |
+| 300 | Particle Swarm Optimization | 🔵 | New |
+| 301 | Bayesian Network / Belief Network | 🟠 | New |
+| 302 | Hidden Markov Model (HMM) from Scratch | 🟠 | New |
+| 303 | Word2Vec / GloVe Embeddings from Scratch | 🟠 | New |
+| 304 | Named Entity Recognition (NER) System | 🔵 | New |
+| 305 | Extractive Text Summarizer | 🟠 | New |
+| 306 | Question Answering System (BERT-style) | 🟠 | New |
+| 307 | Document Clustering (HDBSCAN) | 🔵 | New |
+| 308 | Isolation Forest (Anomaly Detection) | 🔵 | New |
+| 309 | Gaussian Mixture Model (GMM) | 🟠 | New |
+| 310 | Principal Component Analysis (PCA) from Scratch | 🔵 | New |
+| 311 | t-SNE Dimensionality Reduction | 🟠 | New |
+| 312 | Gradient Boosting Machine (XGBoost-like) | 🟠 | New |
+| 313 | Latent Dirichlet Allocation (Topic Modeling) | 🟠 | New |
+| 314 | Causal Inference / A/B Testing Framework | 🟠 | New |
+
+#### 5. 🔤 Languages & Compilers (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 315 | Forth Language Interpreter | 🟠 | New |
+| 316 | Prolog Inference Engine | 🟠 | New |
+| 317 | Smalltalk-like VM / Object System | 🔴 | New |
+| 318 | Brainfuck JIT Compiler | 🟠 | New |
+| 319 | Python Bytecode Disassembler | 🟠 | New |
+| 320 | SQL Parser (full grammar) | 🟠 | New |
+| 321 | YAML Parser from Scratch | 🔵 | New |
+| 322 | TOML Parser from Scratch | 🟢 | New |
+| 323 | INI / Config File Parser | 🟢 | New |
+| 324 | C Preprocessor (macros, includes, pragma) | 🔴 | New |
+| 325 | Source Map Generator (JS/CSS) | 🟠 | New |
+| 326 | Simple Decompiler (binary → pseudocode) | 🔴 | New |
+| 327 | Debug Symbol Reader (DWARF/PDB) | 🔴 | New |
+| 328 | S-Expression Parser + Pretty Printer | 🔵 | New |
+| 329 | PEG Parser Generator | 🟠 | New |
+| 330 | Language Server Protocol (LSP) Implementation | 🟠 | New |
+
+#### 6. 🎨 Graphics & Rendering (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 331 | GLTF/GLB 3D Model Loader | 🟠 | New |
+| 332 | Bezier Curve Editor | 🔵 | New |
+| 333 | Subdivision Surface Modeler (Catmull-Clark) | 🟠 | New |
+| 334 | Marching Cubes (isosurface extraction) | 🟠 | New |
+| 335 | Terrain Generation (Perlin Noise + Erosion) | 🔵 | New |
+| 336 | Fluid Simulation (SPH / PIC / FLIP) | 🔴 | New |
+| 337 | Cloth Simulation (Spring-Mass System) | 🟠 | New |
+| 338 | Volumetric Cloud / Fog Rendering | 🟠 | New |
+| 339 | Global Illumination (Path Tracing) | 🔴 | New |
+| 340 | Shadow Mapping (Cascaded / PCF) | 🟠 | New |
+| 341 | Screen-Space Reflections | 🟠 | New |
+| 342 | Post-Processing Pipeline (Bloom, DOF, Motion Blur) | 🟠 | New |
+| 343 | GPU Compute Shader (particles / physics) | 🟠 | New |
+| 344 | Signed Distance Field (SDF) Renderer | 🟠 | New |
+| 345 | Color Quantization / Palette Extraction | 🔵 | New |
+| 346 | Procedural City / Building Generator | 🟠 | New |
+
+#### 7. 🎮 Game Development (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 347 | Visual Novel Engine (Ren'Py-like) | 🔵 | New |
+| 348 | Point-and-Click Adventure Engine | 🟠 | New |
+| 349 | Interactive Fiction / Text Parser (Zork-like) | 🔵 | New |
+| 350 | Sokoban / Puzzle Game Engine | 🔵 | New |
+| 351 | Rhythm Game (Guitar Hero / osu!-like) | 🟠 | New |
+| 352 | Top-Down Racing Game | 🔵 | New |
+| 353 | Fighting Game Engine (Street Fighter-like) | 🟠 | New |
+| 354 | Tower Defense Game | 🔵 | New |
+| 355 | City Builder / Tycoon Game | 🟠 | New |
+| 356 | Idle / Incremental Clicker Game | 🟢 | New |
+| 357 | Battle Royale (simplified, AI opponents) | 🟠 | New |
+| 358 | Online Multiplayer Lobby + Matchmaking | 🟠 | New |
+| 359 | Collectible Card Game (Hearthstone-like) | 🟠 | New |
+| 360 | Hidden Object Game | 🔵 | New |
+| 361 | Endless Runner (Temple Run-like) | 🔵 | New |
+| 362 | Pinball Simulation | 🔵 | New |
+
+#### 8. 🔒 Security & Cryptography (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 363 | Differential Privacy Library | 🔴 | New |
+| 364 | Homomorphic Encryption (simple addition) | 🔴 | New |
+| 365 | Shamir's Secret Sharing Scheme | 🟠 | New |
+| 366 | ECDSA Digital Signatures from Scratch | 🟠 | New |
+| 367 | Post-Quantum Cryptography Prototype (lattice) | 🔴 | New |
+| 368 | Side-Channel Attack Demo (timing/power) | 🟠 | New |
+| 369 | Network Protocol Fuzzer (AFL-like) | 🟠 | New |
+| 370 | Seccomp-Based Application Sandbox | 🟠 | New |
+| 371 | Hardened Container Runtime (gVisor-like) | 🔴 | New |
+| 372 | Credential Vault / Secrets Hub | 🟠 | New |
+| 373 | Secrets Rotation Service | 🔵 | New |
+| 374 | Code Signing & Verification System | 🟠 | New |
+| 375 | GPG-like Encryption Tool | 🟠 | New |
+| 376 | Password Strength Estimator (zxcvbn-like) | 🔵 | New |
+| 377 | Certificate Transparency Log Monitor | 🟠 | New |
+| 378 | Web Application Firewall (WAF) Rules Engine | 🟠 | New |
+
+#### 9. 🧮 Algorithms & Mathematics (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 379 | Hungarian Algorithm (assignment problem) | 🟠 | New |
+| 380 | Floyd-Warshall (all-pairs shortest path) | 🔵 | New |
+| 381 | Edmonds-Karp / Dinic Max Flow | 🟠 | New |
+| 382 | Knuth-Morris-Pratt String Search | 🔵 | New |
+| 383 | Burrows-Wheeler Transform (BWT) | 🟠 | New |
+| 384 | Huffman Coding Visualizer | 🔵 | New |
+| 385 | L-System / Fractal Grammar Generator | 🔵 | New |
+| 386 | Voronoi Diagram / Fortune's Algorithm | 🟠 | New |
+| 387 | Delaunay Triangulation | 🟠 | New |
+| 388 | Barnes-Hut N-Body Approximation | 🟠 | New |
+| 389 | Strassen Matrix Multiplication | 🟠 | New |
+| 390 | Karatsuba Multiplication | 🔵 | New |
+| 391 | Miller-Rabin Primality Test | 🔵 | New |
+| 392 | Levenshtein / Damerau-Levenshtein Distance | 🔵 | New |
+| 393 | Longest Common Subsequence (LCS) | 🔵 | New |
+| 394 | Maximum Subarray (Kadane's Algorithm) | 🟢 | New |
+| 395 | Reservoir Sampling | 🔵 | New |
+
+#### 10. 🛠️ Practical Tools & Applications (Vol 2)
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 396 | Clipboard Manager (history, categories) | 🔵 | New |
+| 397 | Screen Recorder (video capture) | 🟠 | New |
+| 398 | Screenshot Annotation Tool | 🔵 | New |
+| 399 | Window Switcher (Alt-Tab replacement) | 🔵 | New |
+| 400 | Instant File Search (Everything-like) | 🟠 | New |
+| 401 | Disk Usage Analyzer (TreeMap view) | 🔵 | New |
+| 402 | Color Picker / Eyedropper (screen) | 🟢 | New |
+| 403 | Font Preview & Manager | 🔵 | New |
+| 404 | Batch File Renamer | 🟢 | New |
+| 405 | Duplicate File Finder | 🔵 | New |
+| 406 | Quick Launcher (Alfred / Spotlight-like) | 🟠 | New |
+| 407 | Pomodoro Timer + Task Tracker | 🟢 | New |
+| 408 | Habit Tracker with Streak Counting | 🟢 | New |
+| 409 | Flashcard App (Anki-like, spaced repetition) | 🔵 | New |
+| 410 | Recipe Manager / Meal Planner | 🔵 | New |
+| 411 | Document Scanner (camera-based) | 🟠 | New |
+| 412 | E-Book Reader (EPUB/MOBI) | 🟠 | New |
+| 413 | Budget Tracker / Personal Finance | 🔵 | New |
+
+### New Categories
+
+#### 11. 📱 Mobile & Desktop Development
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 414 | Cross-Platform Calculator App | 🟢 | New |
+| 415 | Weather App with Live Animations | 🔵 | New |
+| 416 | Expense / Budget Tracker | 🔵 | New |
+| 417 | Note-Taking App (sync, markdown) | 🔵 | New |
+| 418 | RSS / Feed Reader | 🔵 | New |
+| 419 | Podcast Player App | 🟠 | New |
+| 420 | Workout / Exercise Tracker | 🔵 | New |
+| 421 | Meditation / Focus Timer | 🟢 | New |
+| 422 | QR Code Scanner & Generator | 🔵 | New |
+| 423 | Music Player (playlists, search) | 🔵 | New |
+| 424 | Alarm Clock with Custom Ringtones | 🔵 | New |
+| 425 | Step Counter / Pedometer | 🔵 | New |
+| 426 | Drawing / Sketchpad App | 🔵 | New |
+| 427 | Unit Converter (comprehensive) | 🟢 | New |
+| 428 | Language Learning Flashcards | 🔵 | New |
+| 429 | Shopping List / Grocery App | 🟢 | New |
+| 430 | Calendar / Event Scheduler | 🔵 | New |
+| 431 | Compass / Level Tool | 🔵 | New |
+| 432 | Barcode Scanner (product lookup) | 🔵 | New |
+| 433 | Habit Tracker / Streak Counter | 🟢 | New |
+
+#### 12. 🔗 Blockchain & Web3
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 434 | Smart Contract (Solidity) — Simple Storage | 🔵 | New |
+| 435 | Decentralized Exchange (Uniswap-like) | 🔴 | New |
+| 436 | NFT Minter & Marketplace | 🟠 | New |
+| 437 | DAO Governance / Voting System | 🟠 | New |
+| 438 | Merkle Tree (proof gen + verification) | 🔵 | New |
+| 439 | Zero-Knowledge Proof (simple zk-SNARK circuit) | 🔴 | New |
+| 440 | SPV Light Client (Bitcoin/Ethereum) | 🔴 | New |
+| 441 | HD Wallet (BIP32/39/44 mnemonic) | 🟠 | New |
+| 442 | ERC-20 Token from Scratch | 🔵 | New |
+| 443 | Staking / Yield Farming Simulator | 🟠 | New |
+| 444 | Block Explorer Web App | 🔵 | New |
+| 445 | Multi-Signature Wallet | 🟠 | New |
+| 446 | Oracle Price Feed Service | 🟠 | New |
+| 447 | Layer 2 Rollup (simple state channel) | 🔴 | New |
+| 448 | Cross-Chain Bridge Relay | 🔴 | New |
+
+#### 13. 🐳 DevOps & Cloud Infrastructure
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 449 | CI/CD Pipeline Engine (GitHub Actions-like) | 🟠 | New |
+| 450 | Terraform Provider for Custom Service | 🟠 | New |
+| 451 | Configuration Management (Ansible-like) | 🟠 | New |
+| 452 | Monitoring Dashboard (Grafana-like) | 🟠 | New |
+| 453 | Log Aggregator (Loki / ELK-like) | 🟠 | New |
+| 454 | Secret Management (Vault-like) | 🟠 | New |
+| 455 | Feature Flag / Toggle Service | 🔵 | New |
+| 456 | Status Page / Uptime Monitor | 🔵 | New |
+| 457 | On-Call Schedule Manager (PagerDuty-like) | 🔵 | New |
+| 458 | Blue-Green Deployment Tool | 🟠 | New |
+| 459 | Canary Deployment Controller | 🟠 | New |
+| 460 | Artifact Repository (Docker Registry-like) | 🟠 | New |
+| 461 | Service Mesh Proxy Sidecar (Envoy-like) | 🔴 | New |
+| 462 | Chaos Engineering Tool (Chaos Monkey) | 🟠 | New |
+| 463 | Auto-Scaler (K8s HPA-like) | 🟠 | New |
+
+#### 14. 📊 Data Science & Visualization
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 464 | Interactive Dashboard (Tableau-like) | 🟠 | New |
+| 465 | Choropleth Map Generator | 🔵 | New |
+| 466 | Network Graph Visualizer | 🔵 | New |
+| 467 | Sankey Diagram / Flow Chart Generator | 🔵 | New |
+| 468 | Violin / Box Plot Charting Library | 🔵 | New |
+| 469 | Heat Map / Correlation Matrix | 🔵 | New |
+| 470 | Parallel Coordinates Plot | 🔵 | New |
+| 471 | 3D Surface / Contour Plot Renderer | 🟠 | New |
+| 472 | Animated Timeline / Gapminder Chart | 🔵 | New |
+| 473 | Word Cloud Generator | 🔵 | New |
+| 474 | Data Cleaning / Wrangling Pipeline | 🔵 | New |
+| 475 | Web Scraper to Structured Dataset | 🔵 | New |
+| 476 | Time Series Anomaly Visualizer | 🟠 | New |
+| 477 | Alluvial / River Plot Generator | 🔵 | New |
+| 478 | Radar / Spider Chart Generator | 🔵 | New |
+
+#### 15. 🎵 Audio & Music Technology
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 479 | DAW (Digital Audio Workstation) Lite | 🔴 | New |
+| 480 | Audio Editor (Audacity-like waveform editing) | 🟠 | New |
+| 481 | Drum Machine / Step Sequencer | 🔵 | New |
+| 482 | Granular Synthesizer | 🟠 | New |
+| 483 | Audio Looper / Phrase Sampler | 🔵 | New |
+| 484 | Auto-Tune / Pitch Correction | 🟠 | New |
+| 485 | Audio Effect Chain (reverb, delay, chorus) | 🟠 | New |
+| 486 | Metronome / Instrument Tuner | 🔵 | New |
+| 487 | Sheet Music Renderer (MIDI to notation) | 🟠 | New |
+| 488 | Chord Progression Analyzer | 🔵 | New |
+| 489 | Audio Stream Mixer (multi-track) | 🟠 | New |
+| 490 | Noise Gate / Compressor / Limiter | 🔵 | New |
+
+#### 16. 🔌 Embedded Systems & IoT
+
+| # | Challenge | Diff | Source |
+|---|-----------|------|--------|
+| 491 | LED Matrix Display Driver (text + animations) | 🔵 | New |
+| 492 | Temperature / Humidity Data Logger | 🔵 | New |
+| 493 | Smart Home Hub Controller | 🟠 | New |
+| 494 | ESP32 Web Server with REST API | 🔵 | New |
+| 495 | Handheld Game Console (Arduino) | 🟠 | New |
+| 496 | Drone Flight Controller (simulation) | 🔴 | New |
+| 497 | Motion-Activated Security Camera | 🟠 | New |
+| 498 | RFID / NFC Door Lock System | 🟠 | New |
+| 499 | Weather Station (sensors + live dashboard) | 🔵 | New |
+| 500 | Bluetooth LE Beacon Scanner | 🟠 | New |
+
+---
+
 ## Challenge Archive
 
-All 250 challenges are language-agnostic. Pick any language you're comfortable with or want to learn. The real value is in the building.
+All 500 challenges are language-agnostic. Pick any language you're comfortable with or want to learn. The real value is in the building.
 
 **Pro Tips:**
 - Use version control from day one
