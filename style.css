@@ -440,6 +440,117 @@ blockquote cite {
   display: none;
 }
 
+.challenge-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: 2px 14px 10px 54px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: none;
+}
+
+.challenge-desc.open {
+  display: block;
+}
+
+
+
+.random-display .rd-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 8px 0;
+  padding: 0 8px;
+}
+
+/* Howto */
+.howto-block {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+
+.howto-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.howto-item + .howto-item {
+  border-top: 1px solid var(--border);
+}
+
+.howto-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.howto-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.howto-body p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: 3px;
+}
+
+.howto-body ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.howto-body li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.howto-body li::before {
+  content: ">";
+  color: var(--accent2);
+  font-family: var(--mono);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.howto-body cite {
+  font-style: normal;
+  color: var(--text-dim);
+}
+
+.howto-links li::before {
+  content: "*";
+  color: var(--accent);
+}
+
+.howto-links a {
+  color: var(--accent2);
+}
+
+.howto-links a:hover {
+  color: var(--text);
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -491,6 +602,11 @@ blockquote cite {
     display: none;
   }
 
+  .challenge-desc {
+    padding: 2px 10px 10px 45px;
+    font-size: 0.72rem;
+  }
+
   .browse-filters select {
     min-width: 100px;
   }
@@ -517,5 +633,10 @@ blockquote cite {
 
   .challenge-row .cr-id {
     font-size: 0.65rem;
+  }
+
+  .challenge-desc {
+    padding: 2px 10px 8px 40px;
+    font-size: 0.68rem;
   }
 }
